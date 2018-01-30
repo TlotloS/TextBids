@@ -1,16 +1,28 @@
-*{color: #000 ;}
-.bg{ background: url('../images/bg-nwu2.jpg') no-repeat fixed center; height: 100%; width: 100%  }
-.form-container{border :3x solid #fff; padding: 50px 60px ; margin-top:5vh;
-					border-radius: 10px 10px 10px 10px;
-                                        
-.header{text-align: center;
-        font: serif bold ; 
-        }
+.bg{ background: url('../images/bg_apple.jpg') no-repeat fixed center; 
+     width: 100%;
+   }
 
-.sb{ color: #000 }
+.form-container{border :0x solid #fff ; 
+                padding: 50px 60px ; 
+                margin-top:5vh;				
+                border-radius: 10px 10px 10px 10px;
+                color: #fff ;
 
 -webkit-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 -moz-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 
+}
+
+h3{text-align: center;
+        font: Courier New;
+        color: #000 ;
+        }
+
+.footer{
+    color: #fff ;
+ }
+
+.*{
+    color:#000 ;
 }

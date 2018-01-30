@@ -11,12 +11,13 @@
 		unset($_SESSION['username']);
 		header("location: login.php");
 	}
+        header("location: index_navbar.php");
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>TextBids - Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -43,6 +44,7 @@
 			<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
 		<?php endif ?>
 	</div>
-		
 </body>
+
+ 
 </html>

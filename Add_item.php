@@ -4,7 +4,7 @@
 <head>
         <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>TextBids - Registration</title>
+       <title>TextBids - Add item</title>
     
 </head>
        <link rel="stylesheet" type="text/css" href="css/registration.css">
@@ -24,27 +24,49 @@
 		<?php include('errors.php'); ?>
             
                 <div class="header">
-                    <h3>Register and account</h3>
+                    <h2>Add new textbook sale</h3>
                 </div>
 
-                <!-- Name input -->
+                <!-- Textbook Title -->
                         <div class="form-group">
-                            <label for="\Name">Name</label>
-                            <input type="text" class="form-control" name="Name" placeholder="Enter Name" required >
+                            <label for="\Title">Title</label>
+                            <input type="text" class="form-control" name="Title" placeholder="Textbook Title" required >
                         </div>
 
-                <!-- Surname input -->
+                <!-- ISBN -->
                         <div class="form-group">
-                            <label for="\Surname">Surname</label>
-                            <input type="text" class="form-control" name="Surname" placeholder="Enter Surname" required>
+                            <label for="\ISBN">ISBN</label>
+                            <input type="text" class="form-control" name="ISBN" placeholder="(Optional)">
                         </div>
-
-                <!-- Student Number input -->
+                
+                <!-- Author -->
                         <div class="form-group">
-                            <label for="\StudentNo">Student Number</label>
-                            <input type="text" class="form-control" name="StudentNo" placeholder="Enter Student Number" required>
+                            <label for="\Author">Author</label>
+                            <input type="text" class="form-control" name="Author" placeholder="Enter Author Credentials" required>
                         </div>
-
+                
+                <!-- Module -->
+                        <div class="form-group">
+                            <label for="\Module">Module</label>
+                            <input type="text" class="form-control" name="Module" placeholder="Enter Module Name" required>
+                        </div>
+               
+                <!-- Module Code -->
+                        <div class="form-group">
+                            <label for="\Module_Code">Module Code</label>
+                            <select class="form-control " name="Module_Code" placeholder = "Select Module Code">
+                                <option>Other</option>
+                                <option>Humanities</option> 
+                                <option>Health Sciences</option>
+                                <option>Education</option>
+                                <option>Theology</option>
+                                <option>Law</option>
+                                <option>Engineering</option>
+                                <option>Economic and Management Sciences</option>
+                                <option>Natural and Agricultural Sciences</option>
+                            </select>
+                        </div>                
+                
                 <!-- Faculty input-->
                         <div class="form-group">
                             <label for="selFaculty">Faculty</label>
@@ -60,13 +82,7 @@
                             </select>
                         </div>
 
-                <!-- Degree input -->
-                        <div class="form-group">
-                            <label for="\Degree">Degree</label>
-                            <input type="text" class="form-control" name="Degree" placeholder="Enter degree" required>
-                        </div>
-
-                <!-- Academic year of Study -->
+               <!-- Academic year of Study -->
                         <div class="form-group sb">
                             <label for="selYOS">Academic year of study</label>
                             <select class="form-control" name="selYOS" >
@@ -74,41 +90,19 @@
                                 <option>2nd Year</option>
                                 <option>3rd Year</option>
                                 <option>4th Year</option>
-                                <option>Post Graduate</option>
                             </select>
                         </div>
 
-                <!-- Email input -->
+                <!-- Textbook Price -->
                         <div class="form-group">
-                            <label for="\InputEmail1">Email address</label>
-                            <input type="email" class="form-control" name="InputEmail1" placeholder="Enter email address" required>
-                        </div>
-
-                <!-- Cell Phone Number -->
-                        <div class="form-group">
-                            <label for="\CellNo">Cellphone number</label>
-                            <input type="text" class="form-control" name="CellNo" placeholder="Enter cell phone number" required>
-                        </div>
-
-                <!-- Password input1 -->
-                        <div class="form-group">
-                            <label for="Password">Password</label>
-                            <input type="password" class="form-control" name="Password" placeholder="Enter password" required>
-                        </div>
-
-                <!-- Password input2 Confirmation-->
-                        <div class="form-group">
-                            <label for="ConfirmPassword">Confirm Password</label>
-                            <input type="password" class="form-control" name="ConfirmPassword" placeholder="Confirm password" required>
+                            <label for="\Book_Price">Textbook Price</label>
+                            <input type="text" class="form-control" name="Book_Price" placeholder="Enter Price (ZAR)" required>
                         </div>
 
 		<div class="input-group">
-			<button type="submit" class="btn btn-success btn-block" name="reg_user">Register</button>
+			<button type="submit" class="btn btn-success btn-block" name="Add_item">Add item for sale</button>
 		</div>
-		
-                <p>
-			Already a member? <a href="login.php">Sign in</a>
-		</p>
+       
         </div>
         </form> <!-- End of form container -->
         

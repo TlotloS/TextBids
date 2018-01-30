@@ -1,12 +1,14 @@
 *{color: #fff ;}
 .bg{ background: url('../images/bg_apple.jpg') no-repeat fixed center; height: 100vh;  }
-.form-container{border :0px solid #fff; padding: 50px 60px ; margin-top:20vh;
-					border-radius: 10px 10px 10px 10px;
 
-.header{text-align: center; }
+.form-container{border :0px solid #fff; padding: 50px 60px ; margin-top:50vh;
+					border-radius: 10px 10px 10px 10px;
+                                        
 
 -webkit-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 -moz-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.67);
 
 }
+
+.header{text-align: center; }
